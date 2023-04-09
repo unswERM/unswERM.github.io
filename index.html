@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Token Creation Example</title>
-    <script src="https://prod-apsoutheast-a.online.tableau.com/t/infs3605/views/INFS3605/Dashboard1"></script>
+    <script src="https://prod-apsoutheast-a.online.tableau.com/t/infs3605/views/INFS3605/Dashboard1?:embed=y&:showAppBanner=false&:display_count=n&:showVizHome=n"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
     <script>
         function createToken(userName,kid,secret,iss,scp){
@@ -47,7 +47,7 @@
         var kid = "aaabcaba-2e10-4302-b912-827772344fd4";
         var secret = "eKj07GA+LbtY7wFSuVdsb63Dt/wrCbgxyNCiiVAL84Q=";
         var iss = "ad9d5b7d-36e8-4d47-945b-b2393f5bbd2c";
-        var scp = ["<script type='module' src='https://prod-apsoutheast-a.online.tableau.com/t/infs3605/views/INFS3605/Dashboard1?:embed=y&:showAppBanner=false&:display_count=n&:showVizHome=n'></script><tableau-viz id='tableau-viz' src='https://prod-apsoutheast-a.online.tableau.com/t/infs3605/views/INFS3605/Dashboard1?:embed=y&:showAppBanner=false&:display_count=n&:showVizHome=n' width='1280' height='570' hide-tabs toolbar='bottom' ></tableau-viz>"];
+        var scp = ["<script type='module' src='https://prod-apsoutheast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://prod-apsoutheast-a.online.tableau.com/t/infs3605/views/INFS3605/Dashboard1' width='1280' height='570' hide-tabs toolbar='bottom' ></tableau-viz>"];
 
         var jwtToken = createToken(userName, kid, secret, iss, scp);
 
